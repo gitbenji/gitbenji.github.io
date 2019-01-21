@@ -1,0 +1,22 @@
+.container {
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.sidebar {
+	height: 100%;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+#map {
+	height: 100%;
+    -webkit-flex: 5;
+    flex: 5;
+}
+
+body {
+	
+}

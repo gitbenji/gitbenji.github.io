@@ -1,0 +1,323 @@
+
+@font-face { font-family: AGaramond; src: url(../fonts/AGaramondPro-Regular.otf); }
+@font-face { font-family: Asul; src: url(../fonts/Asul-Regular.ttf); }
+@font-face { font-family: Hoefler; src: url(../fonts/Hoefler Text.ttf); }
+@font-face { font-family: Brandon; src: url(../fonts/Brandon_reg.otf); }
+
+
+body {
+  /*background-color: #FFFFFA;*/
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0 5%;
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a.svg {
+ position: relative;
+ display: block; 
+}
+
+a.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
+
+.color {
+  /*color: #EDE8B9;
+  border-color: #EDE8B9;*/
+  color: #000000;
+  border-color: #000000;
+  opacity: .5;
+  transition: 100ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.color:hover {
+  opacity: 1;
+}
+
+#display {
+  position: fixed;
+  z-index: 2;
+  height: 45vh;
+  top: 4vh;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: scroll;
+  display: none;
+  width: 100vw;
+}
+
+#not-container {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(55, 55, 55, 0.3);
+}
+
+
+/* Elements
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main {
+
+  }
+}
+
+/* --- Welcome ---*/
+
+#welcome {
+  height: 100vh;
+}
+
+#welcome h1 {
+  font-size: 20vw;
+  margin: 0;
+  padding-top: 50vh;
+}
+
+#welcome-text {
+  text-align: justify;
+}
+
+@media (min-width: 900px) {
+  #welcome {
+    height: fit-content;
+    padding-top: 1%;
+    margin-top: 0;
+  }
+
+  #welcome h1 {
+    font-size: 7.5vw;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  #welcome p {
+    font-size: 1.3rem;
+  }
+}
+
+/* --- Teal ---*/
+
+#teal {
+  height: 95vh;
+  padding: 5% 5%;
+  background-image: repeating-linear-gradient(to right, #000 0%, #000 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to right, #000 0%, #000 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to bottom, #000 0%, #000 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to bottom, #000 0%, #000 50%, transparent 50%, transparent 100%);
+  background-position: left top, left bottom, left top, right top;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 12px 2px, 12px 2px, 2px 12px, 2px 12px;
+}
+
+#teal h2 {
+  font-size: 15vw;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  #teal {
+    height: fit-content;
+    padding: 5% 0;
+    margin-top: 5%;
+  }
+
+  #teal h2 {
+    font-size: 3vw;
+    padding-top: 0;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+
+  #teal p {
+    padding: 0 15%;
+  }
+}
+
+/* --- Dancer --- */
+
+#dancer {
+  margin-top: 0;
+  height: 102vh;
+}
+
+#dancer object {
+  padding-top: 30vh;
+  pointer-events: none;
+}
+
+@media (min-width: 900px) {
+  #dancer {
+    margin-top: 12%;
+    height: fit-content;
+  }
+
+  #dancer object {
+    padding-top: 0;
+  }
+}
+
+/* --- Uru --- */
+
+#uru {
+  height: 95vh;
+  border: 1px solid;
+  padding: 0 5%;
+  margin-bottom: 100vh;
+}
+
+#uru h2 {
+  font-family: Brandon;
+  font-size: 13vw;
+  text-align: center;
+  margin: 0;
+  margin-top: 10%;
+}
+
+#uru object {
+  margin-top: -10px;
+  max-height: 100px;
+  margin-bottom: 30%;
+}
+
+@media (min-width: 900px) {
+  #uru {
+    margin-top: 5%;
+    height: fit-content;
+    padding: 2% 0;
+  }
+
+  #uru h2 {
+    font-size: 3vw;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 6%;
+  }
+
+  #uru object {
+    max-height: 150px;
+    margin: 0 10%;
+  }
+
+  #uru p {
+    margin-top: -10px;
+  }
+}
+
+/* White Spaces
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 900px) {
+
+  .white-space {
+    height: fit-content;
+  }
+
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1 {
+  font-family: Asul;
+  font-size: 7.0rem;
+}
+
+h2 {
+  font-family: Hoefler;
+  font-size: 7.0rem;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 3.0rem;
+}
+
+p {
+  font-family: "AGaramond";
+  font-size: 1.0rem;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 7.0rem;
+  }
+
+  h2 {
+    font-size: 7.0rem;
+  }
+
+  h3 {
+    font-size: 3.0rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Columns
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 900px) {
+  .one-column {
+    width: 4.1vw;
+  }
+
+  .two-columns {
+    width: 8.3vw;
+  }
+  
+  .three-columns {
+    width: 12.5vw;
+  }
+  
+  .four-columns {
+    width: 16.6vw;
+  }
+  
+  .five-columns {
+    width: 20.8vw;
+  }
+  
+  .six-columns {
+    width: 25vw;
+  }
+  
+  .seven-columns {
+    width: 29.1vw;
+  }
+  
+  .eight-columns {
+    width: 33.333vw;
+  }
+  

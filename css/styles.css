@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: #fffbfe;
+  color: black;
+}
+
+.container {
+  border-bottom: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+#intro {
+  margin-bottom: 40vh;
+  padding-top: 2vh;
+}
+
+.row {
+  margin-bottom: 6vh;
+  padding-left: 5vw;
+  padding-right: 20vw;
+}
+
+.container p {
+  padding-left: 10vw;
+  padding-bottom: 5vh;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+#footer a {
+  padding-right: 15px;
+}

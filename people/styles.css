@@ -1,0 +1,46 @@
+body {
+	margin: 15% 10%;
+}
+
+@media (max-width: 860px) {
+	body {
+		margin: 0;
+	}
+}
+
+.row {
+	margin-top: 0%;
+}
+
+@media (min-width: 860px) {
+	.row {
+		display: inline-flex;
+		margin-top: 15%;
+	}
+}
+
+.img-container {
+	text-align: center;
+	width: 100%;
+}
+
+.img-container img {
+	width: 100%;
+}
+
+.txt-container p {
+	line-height: 1.8;
+}
+
+@media (max-width: 860px) {
+	.txt-container {
+		margin: 0 10%;
+		padding-bottom: 15%;
+	}
+}
+
+@media (min-width: 860px) {
+	.txt-container {
+		margin-left: 8%;
+	}
+}
