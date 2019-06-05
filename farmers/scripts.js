@@ -62,7 +62,7 @@ function initClient() {
     'scope': SCOPE,
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
   }).then(function() {
-  	console.log('here')
+  	console.log(gapi)
     // gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
     // updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
   });
