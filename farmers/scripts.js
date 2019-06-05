@@ -23,7 +23,7 @@ function makeApiCall() {
     valueInputOption: 'USER_ENTERED',
 
     // How the input data should be inserted.
-    insertDataOption: 'ROWS',
+    insertDataOption: 'INSERT_ROWS',
   };
 
   var valueRangeBody = {
