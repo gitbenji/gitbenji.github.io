@@ -50,9 +50,9 @@ function makeApiCall() {
 
 function initClient() {
   console.log('init')
-  var API_KEY = 'AIzaSyC9bc0SH066IHnzIKeXYHXV31IHotK8ONo';  // TODO: Update placeholder with desired API key.
+  var API_KEY = 'AIzaSyCeWFxMwgkv_mWXvGQH38qER7a4VtxL2hY';  // TODO: Update placeholder with desired API key.
 
-  var CLIENT_ID = '471812939106-a90sjsv0qb8r6qflpfra7o8pqnv4kqlh.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
+  var CLIENT_ID = '102539574754-g8t3mmrtnnnm1th6gm98gabu4kv4vcl6.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
 
   var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
@@ -62,7 +62,7 @@ function initClient() {
     'scope': SCOPE,
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
   }).then(function() {
-  	console.log(gapi)
+  	// console.log(gapi)
     gapi.auth2.getAuthInstance().signIn();
     // gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
     // updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
