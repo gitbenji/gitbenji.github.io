@@ -56,6 +56,8 @@ function initClient() {
 
   var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
+  console.log(API_KEY)
+
   gapi.client.init({
     'apiKey': API_KEY,
     'clientId': CLIENT_ID,
