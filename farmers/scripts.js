@@ -52,13 +52,13 @@ function initClient() {
   console.log('init')
   var API_KEY = 'AIzaSyC9bc0SH066IHnzIKeXYHXV31IHotK8ONo';  // TODO: Update placeholder with desired API key.
 
-  var CLIENT_ID = '471812939106-a90sjsv0qb8r6qflpfra7o8pqnv4kqlh.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
+  // var CLIENT_ID = '471812939106-a90sjsv0qb8r6qflpfra7o8pqnv4kqlh.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
 
   var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
   gapi.client.init({
     'apiKey': API_KEY,
-    'clientId': CLIENT_ID,
+    // 'clientId': CLIENT_ID,
     'scope': SCOPE,
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
   }).then(function() {
