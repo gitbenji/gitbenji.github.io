@@ -58,16 +58,16 @@ function initClient() {
 
   console.log(API_KEY)
 
-  // gapi.client.init({
-  //   'apiKey': API_KEY,
-  //   'clientId': CLIENT_ID,
-  //   'scope': SCOPE,
-  //   'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-  // }).then(function() {
-  //   console.log('then')
-  //   gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
-  //   updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-  // });
+  gapi.client.init({
+    'apiKey': API_KEY,
+    'clientId': CLIENT_ID,
+    'scope': SCOPE,
+    'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+  }).then(function() {
+    console.log('then')
+    gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
+    updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+  });
 }
 
 function handleClientLoad() {
