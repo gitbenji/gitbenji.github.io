@@ -10,8 +10,6 @@ form.onsubmit = (e) => {
 	makeApiCall()
 }
 
-handleClientLoad()
-
 function makeApiCall() {
   var params = {
     // The ID of the spreadsheet to update.
