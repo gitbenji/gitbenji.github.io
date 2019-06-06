@@ -64,7 +64,7 @@ function initClient() {
     'scope': SCOPE,
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
   }).then(function() {
-    console.log('then')
+    console.log('then', gapi.client)
     gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
     updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
   });
@@ -76,8 +76,8 @@ function handleClientLoad() {
 }
 
 function updateSignInStatus(isSignedIn) {
+  console.log(isSignedIn)
   if (isSignedIn) {
-    console.log(isSignedIn)
     // makeApiCall();
   }
 }
