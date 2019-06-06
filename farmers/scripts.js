@@ -52,7 +52,7 @@ function initClient() {
   console.log('init')
   var API_KEY = 'AIzaSyC9bc0SH066IHnzIKeXYHXV31IHotK8ONo';  // TODO: Update placeholder with desired API key.
 
-  var CLIENT_ID = '102539574754-g8t3mmrtnnnm1th6gm98gabu4kv4vcl6.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
+  var CLIENT_ID = '471812939106-a90sjsv0qb8r6qflpfra7o8pqnv4kqlh.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
 
   var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
