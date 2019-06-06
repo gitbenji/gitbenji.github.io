@@ -79,6 +79,8 @@ function updateSignInStatus(isSignedIn) {
   console.log(isSignedIn)
   if (isSignedIn) {
     // makeApiCall();
+  } else {
+    gapi.auth2.getAuthInstance().signIn();
   }
 }
 
