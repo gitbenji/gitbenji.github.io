@@ -57,9 +57,6 @@ function makeApiCall() {
 	  ]
   };
 
-  var response = {}
-  handleAppendResponse(response)
-
   var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
   request.then(function(response) {
     handleAppendResponse(response)
