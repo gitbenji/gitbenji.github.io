@@ -60,12 +60,12 @@ function makeApiCall() {
   var response = {}
   handleAppendResponse(response)
 
-  // var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
-  // request.then(function(response) {
-  //   handleAppendResponse(response)
-  // }, function(reason) {
-  //   console.error('error: ' + reason.result.error.message);
-  // });
+  var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
+  request.then(function(response) {
+    handleAppendResponse(response)
+  }, function(reason) {
+    console.error('error: ' + reason.result.error.message);
+  });
 }
 
 function initClient() {
@@ -92,7 +92,7 @@ function initClient() {
 
 function handleClientLoad() {
   console.log('here')
-  // gapi.load('client:auth2', initClient);
+  gapi.load('client:auth2', initClient);
 }
 
 function updateSignInStatus(isSignedIn) {
