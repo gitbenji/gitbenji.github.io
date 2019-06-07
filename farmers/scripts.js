@@ -3,11 +3,29 @@ const inputs = document.getElementsByTagName('input')
 
 form.onsubmit = (e) => {
 	e.preventDefault()
-	Array.prototype.forEach.call(inputs, function(input) {
-	    // Do stuff here
-	    console.log(input.value);
-	});
 	makeApiCall()
+}
+
+function clearInputFields() {
+  Array.prototype.forEach.call(inputs, function(input) {
+      if (input.name != 'farm-name') {
+        input.value = null;
+      }
+  });
+}
+
+function displaySuccess() {
+  Array.prototype.forEach.call(inputs, function(input) {
+      input.style.borderBottom = '1px solid green'
+      setTimeout(function() {
+        input.style.borderBottom = '1px solid black'
+      }, 800)
+  });
+}
+
+function handleAppendResponse(response) {
+  clearInputFields()
+  displaySuccess()
 }
 
 function makeApiCall() {
@@ -39,13 +57,15 @@ function makeApiCall() {
 	  ]
   };
 
-  var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
-  request.then(function(response) {
-    // TODO: Change code below to process the `response` object:
-    console.log(response.result);
-  }, function(reason) {
-    console.error('error: ' + reason.result.error.message);
-  });
+  var response = {}
+  handleAppendResponse(response)
+
+  // var request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
+  // request.then(function(response) {
+  //   handleAppendResponse(response)
+  // }, function(reason) {
+  //   console.error('error: ' + reason.result.error.message);
+  // });
 }
 
 function initClient() {
@@ -72,7 +92,7 @@ function initClient() {
 
 function handleClientLoad() {
   console.log('here')
-  gapi.load('client:auth2', initClient);
+  // gapi.load('client:auth2', initClient);
 }
 
 function updateSignInStatus(isSignedIn) {
